@@ -18,7 +18,7 @@ export default function BottomNav() {
       </div>
       |
       <div className='BottomNav-div-text'>
-        <p className={(url === '/education') ? 'BottomNav-p-active' : 'BottomNav-p'} onClick={() => navigate('/education')}>Education</p>
+        <p className={(url === '/education') ? 'BottomNav-p-active' : 'BottomNav-p'} onClick={() => navigate('/aaron-portfolio/education')}>Education</p>
       </div>
       |
       <div className='BottomNav-div-text'>
