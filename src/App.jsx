@@ -23,7 +23,7 @@ const router = createBrowserRouter([
         element: <Homepage />,
       },
       {
-        path: 'education',
+        path: '/aaron-portfolio/education',
         element: <Education />,
       },
       {
