@@ -15,7 +15,7 @@ function Layout() {
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/aaron-portfolio/',
     element: <Layout />,
     children: [
       {
