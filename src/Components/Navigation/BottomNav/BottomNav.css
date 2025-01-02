@@ -1,0 +1,36 @@
+.BottomNav-div{
+  display: grid;
+  align-items: center;
+  height: 40px;
+  background-color: rgb(83, 103, 174);
+  background-image: linear-gradient(to left, rgb(83, 103, 174), rgb(218, 115, 115));
+  grid-template-columns: 1fr 5px 1fr 5px 1fr 5px 1fr;
+  color: white;
+}
+.BottomNav-div-text{
+  display: flex;
+  justify-content: center;
+}
+.BottomNav-p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 100px;
+  height: 30px;
+  transition: .2s;
+}
+.BottomNav-p:hover{
+  border-radius: 5px;
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+.BottomNav-p-active{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 100px;
+  height: 30px;
+  color: rgb(85, 255, 0);
+}

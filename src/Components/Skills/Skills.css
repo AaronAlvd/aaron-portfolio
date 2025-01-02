@@ -1,0 +1,80 @@
+/* Skills.css */
+
+.skills-container {
+  padding-bottom: 20px;
+  background-image: linear-gradient(to left, rgb(83, 103, 174), rgb(218, 115, 115));
+  overflow-y: scroll;
+  border-radius: 0 0 10px 10px ;
+  width: 100%;
+  height: 78vh;
+  box-sizing: border-box;
+  color: white;
+  font-family: 'Lexend';
+  display: flex;
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 20px 0 0 0;
+  box-sizing: border-box;
+  width: 50%;
+}
+.skills-section {
+  text-align: center;
+}
+.skills-section-title{
+  font-size: 18px;
+  margin: 0 0 15px 0;
+}
+.skills-section1-box{
+  margin: 10px;
+  display: inline-block;
+  width: min-content;
+  text-align: center;
+}
+.skills-logos{
+  height: 60px;
+}
+.skills-logo-text{
+  margin: 0;
+  font-size: 14px;
+}
+.skills-textlogo-box{
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(211, 206, 206);
+  border-radius: 7px;
+  border: 1px solid black;
+  width: min-content;
+}
+.skills-textlogo{
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px;
+}
+
+
+
+
+.skills-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 50%;
+}
+
+.skill-card-title {
+  font-size: 16px;
+}
+
+.skill-card-title2{
+  font-size: 14px;
+}
+
+.skill-card-ul{
+  list-style-type: circle;
+  font-size: 12px;
+  font-weight: 100;
+}

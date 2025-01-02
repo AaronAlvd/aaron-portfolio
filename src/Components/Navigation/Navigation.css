@@ -1,0 +1,80 @@
+.Navigation-div{
+  display: flex;
+  background-color: rgb(32, 32, 32);
+  height: 35px;
+}
+.Navigate-icons{
+  font-size: 8px;
+  margin: 3px;
+}
+.Navigate-div-windowHeader{
+  display: flex;
+  margin: 0 4px 0 9px;
+  height: 100%;
+  align-items: center;
+}
+.Navigation-tabs{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+  height: 30px;
+  margin: 5px 2px 0 2px;
+  border-radius: 10px 10px 0 0;
+}
+.Navigation-tabs:hover{
+  background-color: rgb(38, 81, 125);
+}
+.Navigation-tabs-active {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+  height: 30px;
+  margin: 5px 0 0 5px;
+  background-color: rgb(71, 71, 71);
+  border-radius: 10px 10px 0 0;
+  position: relative;
+}
+.Navigation-link{
+  text-decoration: none;
+  color: rgb(214, 214, 214);
+  font-weight: 100;
+  font-size: 11px;
+}
+.Navigation-logo{
+  height: 20px;
+  margin-left: 5px;
+}
+.Navigation-icon{
+  color: rgb(214, 214, 214);
+  font-weight: 100;
+  font-size: 11px;
+  margin-right: 10px;
+}
+.Navigation-div-2{
+  display: flex;
+  align-items: center;
+  background-color: rgb(71, 71, 71);
+  height: 40px;
+}
+.Navigation-icon-2{
+  color: grey;
+  font-size: 13px;
+  margin: 8px;
+}
+.Navigation-div-searchBar{
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  height: 28px;
+  background-color: rgb(37, 37, 37);
+  width: 80vw;
+  border-radius: 15px;
+}
+.Navigation-url{
+  margin-left: 5px;
+  color: rgb(214, 214, 214);
+  font-weight: 400;
+  font-size: 12px;
+}
