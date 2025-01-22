@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { Navigation, Homepage, Education, Skills, Personal } from './Components';
-import './App.css'
+import { Navigation, Homepage, Education, Skills, Personal, Projects } from './Components';
+import './index.css'
 
 function Layout() {
 
@@ -34,6 +34,10 @@ const router = createBrowserRouter([
         path: 'personal',
         element: <Personal />
       },
+      {
+        path: 'projects',
+        element: <Projects />
+      }
     ]
   }
 ]);

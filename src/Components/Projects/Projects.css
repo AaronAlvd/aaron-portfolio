@@ -1,6 +1,6 @@
-/* Education Page Styles */
+/* projects Page Styles */
 
-.education-container {
+.projects-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,23 +17,23 @@
   border-radius: 0 0 5px 5px;
 }
 
-.education-title {
+.projects-title {
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 20px;
   color: white
 }
 
-.education-list {
+.projects-list {
   display: grid;
   width: 90vw;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: 
-  'col1 col2'
-  'col3 col3';
+  'col3 col3'
+  'col1 col2';
 }
 
-.education-item-1{
+.projects-item-1{
   grid-area: col1;
   display: inline-block;
   /* border: 1px solid black; */
@@ -43,7 +43,7 @@
   width: 40vw;
 }
 
-.education-item-2{
+.projects-item-2{
   grid-area: col2;
   display: inline-block;
   /* border: 1px solid black; */
@@ -52,7 +52,7 @@
   transition: transform 0.2s ease-in-out;
   width: 40vw;
 }
-.education-item-3 {
+.projects-item-3 {
   grid-area: col3;
   display: inline-block;
   /* border: 1px solid black; */
@@ -62,37 +62,38 @@
   width: 80vw;
 }
 
-.education-item:hover {
+.projects-item:hover {
   transform: scale(1.05);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
 }
 
-.education-row-2{
+.projects-row-2{
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 10px 0 10px 0;
 }
 
-.institution {
+.projects-institution {
   font-size: 20px;
   font-weight: 800;
-  margin-bottom: 5px;
+  margin: 0;
+  color: white;
 }
 
-.degree {
-  font-weight: 600;
+.projects-degree {
+  font-weight: 100;
   font-size: 16px;
   margin: 0;
 }
 
-.year {
+.projects-year {
   font-style: italic;
   font-size: 12px;
   margin:0;
 }
 
-.description {
+.projects-description {
   font-size: 14px;
   font-weight: 100;
   margin: 0;

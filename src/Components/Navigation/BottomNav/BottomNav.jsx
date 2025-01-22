@@ -14,19 +14,19 @@ export default function BottomNav() {
   return (
     <div className='BottomNav-div'>
       <div className='BottomNav-div-text'>
-        <p className={(url === '/') ? 'BottomNav-p-active' : 'BottomNav-p'} onClick={() => navigate('/aaron-portfolio/personal')}>About Me</p>
+        <p className={(url === '/aaron-portfolio/personal') ? 'BottomNav-p-active' : 'BottomNav-p'} onClick={() => navigate('/aaron-portfolio/personal')}>About Me</p>
       </div>
       |
       <div className='BottomNav-div-text'>
-        <p className={(url === '/education') ? 'BottomNav-p-active' : 'BottomNav-p'} onClick={() => navigate('/aaron-portfolio/education')}>Education</p>
+        <p className={(url === '/aaron-portfolio/education') ? 'BottomNav-p-active' : 'BottomNav-p'} onClick={() => navigate('/aaron-portfolio/education')}>Education</p>
       </div>
       |
       <div className='BottomNav-div-text'>
-        <p className={(url === null) ? null : 'BottomNav-p'} onClick={() => navigate('/projects')}>Projects</p>
+        <p className={(url === '/aaron-portfolio/projects') ? 'BottomNav-p-active' : 'BottomNav-p'} onClick={() => navigate('/aaron-portfolio/projects')}>Projects</p>
       </div>
       |
       <div className='BottomNav-div-text'>
-        <p className={(url === '/skills') ? 'BottomNav-p-active' : 'BottomNav-p'} onClick={() => navigate('/aaron-portfolio/skills')}>Skills</p>
+        <p className={(url === '/aaron-portfolio/skills') ? 'BottomNav-p-active' : 'BottomNav-p'} onClick={() => navigate('/aaron-portfolio/skills')}>Skills</p>
       </div>
     </div>
   )
