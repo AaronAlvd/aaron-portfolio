@@ -1,0 +1,42 @@
+@media (max-width: 766px) {
+  .NavBar-icon{
+    margin: 0 15px;
+    transition: 500ms;
+  }
+}
+
+@media (min-width: 767px) {
+  .NavBar-icon{
+    margin: 0 35px;
+    transition: 500ms;
+  }
+}
+
+.NavBar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: nav;
+  color: white;
+  height: 40px;
+}
+.NavBar-label{
+  position: absolute;
+  font-size: 14px;
+  margin: 10px 0;
+}
+.NavBar-label_1{
+  transform: translateX(25px);
+}
+.NavBar-label_2{
+  transform: translateX(10px);
+}
+.NavBar-label_3{
+  transform: translateX(15px);
+}
+.NavBar-label_4{
+  transform: translateX(10px);
+}
+.NavBar-label_5{
+  transform: translateX(25px);
+}

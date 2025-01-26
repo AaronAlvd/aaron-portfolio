@@ -1,31 +1,18 @@
-.Homepage-div{
-  display: flex;
-  background-color: rgb(88, 127, 158);
+@media (min-width: 1024px) {
+  .Homepage-div{
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 60px 1fr;
+    grid-template-areas: 
+    'nav nav'
+    'left right';
+    background-color: rgb(23, 23, 23);
+    box-sizing: border-box;
+  }
 }
-.Homepage-div-window{
-  border: 1px solid black;
-  margin: 15px;
-  width: 30vw;
-  height: 350px;
-  border-radius: 15px;
-  backdrop-filter: blur(2px);
-  overflow: hidden;
-}
-.Homepage-div-windowHeader{
-  display: flex;
-  align-items: center;
-  height: 40px;
-  width: 100%;
-  background-color: grey;
-}
-.Homepage-icons{
-  font-size: 8px;
-  margin: 3px;
-}
-.Homepage-p-titles{
-  font-size: 24px;
-}
-.Homepage-logo{
-  width: 100px;
-  margin: 10px;
+
+@media (max-width: 1023px) {
+  .Homepage-div{
+
+  }
 }

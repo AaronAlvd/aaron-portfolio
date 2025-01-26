@@ -1,13 +1,23 @@
 import './Homepage.css';
-import pythonLogo from '../../assets/pythonLogo.png';
-import reactLogo from '../../assets/reactLogo.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircle } from '@fortawesome/free-solid-svg-icons';
+import Personal from '../Personal/Personal';
+import NavBar from '../Navigation/NavBar/NavBar';
+import Education from '../Education/Education';
+import { useState } from 'react';
+import { useLocation } from 'react-router-dom';
 
 export default function Homepage() {
+  const location = useLocation();
+  const [height, setHeight] = useState(window.innerHeight);
+  const [education, setEducation] = useState(location.pathname === '/aaron-portfolio/education');
+  const [experience, setExperience] = useState(location.pathname === '/aaron-portfolio/experience');
+  const [skills, setSkills] = useState(location.pathname === '/aaron-portfolio/skills');
+  const [projects, setProjects] = useState(location.pathname === '/aaron-portfolio/projects');
+
   return (
     <div className='Homepage-div'>
-      
+      <NavBar />
+      <Personal />
+      { education && <Education />}
     </div>
   )
 }

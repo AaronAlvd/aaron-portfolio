@@ -5,10 +5,13 @@ import { TbWorld } from "react-icons/tb";
 import { AiOutlineInfoCircle } from "react-icons/ai";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes, faPlus, faCircle, faArrowLeft, faArrowRight, faRotateRight } from '@fortawesome/free-solid-svg-icons';
-import BottomNav from './BottomNav/BottomNav';
+import { useState } from 'react'
 import './Navigation.css';
 
 export default function Navigation() {
+  const [width, setWidth] = useState(window.innerWidth);
+
+  if (width < 1024) return null;
 
   return (
     <div>
@@ -60,7 +63,6 @@ export default function Navigation() {
           <small className='Navigation-url'>AaronAlvarado.com</small>
         </div>
       </div>
-      <BottomNav/>
     </div>
   )
 }
