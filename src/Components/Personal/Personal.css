@@ -120,14 +120,13 @@
 
 @media (min-width: 1024px) {
   .Personal{
-    grid-area: left;
-    display: flex;
+    display: inline-block;
+    padding: 0px 40px;
     justify-content: center;
-    width: 100%;
+    align-items: center;
     color: white;
     box-sizing: border-box;
     font-family: 'Courier New', monospace;
-    padding-top: 40px;
   }
   .Personal-div{
     display: flex;

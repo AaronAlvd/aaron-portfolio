@@ -14,8 +14,7 @@ export default function Homepage() {
   const [projects, setProjects] = useState(location.pathname === '/aaron-portfolio/projects');
 
   return (
-    <div className='Homepage-div'>
-      <NavBar />
+    <div className='Homepage-div' onKeyDown={() => handleKeyDown()}>
       <Personal />
       { education && <Education />}
     </div>

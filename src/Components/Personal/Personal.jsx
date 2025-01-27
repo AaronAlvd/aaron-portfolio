@@ -8,13 +8,13 @@ export default function Personal() {
 
 
   return (
-    <div className='Personal' style={{height: `${width > 1023 ? height - 170 + 'px' : 'min-content'}`}}>
+    <div className='Personal'>
       <div className="Personal-div">
         <img src={anonymous} className="Personal-image"/>
-        <div style={{width: '155px', textAlign: 'center'}} className="Personal-center">
+        <div style={{width: '175px', textAlign: 'center'}} className="Personal-center">
           <p className="Personal-name">Aaron Alvarado</p>
         </div>
-        <div style={{width: '230px', textAlign: 'center'}} className="Personal-center">
+        <div style={{width: '270px', textAlign: 'center'}} className="Personal-center">
           <p className="Personal-occupation">Full Stack Software Developer</p>
         </div>
         {/* <div style={{width: '100%'}} className="Personal-center">

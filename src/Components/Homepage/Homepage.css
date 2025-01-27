@@ -1,18 +1,11 @@
 @media (min-width: 1024px) {
   .Homepage-div{
-    display: grid;
-    grid-template-columns: 35% 65%;
-    grid-template-rows: 60px 1fr;
-    grid-template-areas: 
-    'nav nav'
-    'left right';
     background-color: rgb(23, 23, 23);
-    box-sizing: border-box;
   }
 }
 
 @media (max-width: 1023px) {
   .Homepage-div{
-
+    background-color: rgb(23, 23, 23);
   }
 }

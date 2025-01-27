@@ -1,6 +1,7 @@
 import github from '../../assets/github.svg';
 import linkedinLogo from '../../assets/linkedinLogo.png';
-import docsLogo from '../../assets/google-docs.png'
+import docsLogo from '../../assets/google-docs.png';
+import NavBar from './NavBar/NavBar';
 import { TbWorld } from "react-icons/tb";
 import { AiOutlineInfoCircle } from "react-icons/ai";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -14,6 +15,7 @@ export default function Navigation() {
   if (width < 1024) return null;
 
   return (
+    <>
     <div>
       <div className='Navigation-div'>
       <div className='Navigate-div-windowHeader'>
@@ -64,5 +66,7 @@ export default function Navigation() {
         </div>
       </div>
     </div>
+    <NavBar />
+    </>
   )
 }

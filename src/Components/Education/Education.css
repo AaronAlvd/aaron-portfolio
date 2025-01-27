@@ -1,0 +1,67 @@
+
+@media (min-width: 1024px) {
+  .Education{
+    display: inline-block;
+    color: white;
+    width: 600px;
+  }
+  .Education-section{
+    padding: 20px;
+    background-color: rgb(7, 7, 7);
+    border-radius: 10px;
+  }
+  .Education-title{
+    margin: 0 10px 0 0;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .Education-degree{
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .Education-date{
+    margin: 0;
+    font-size: 13px;
+    font-weight: 100;
+  }
+  .Education-text{
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 1023px) {
+  .Education{
+    grid-area: right;
+    color: white;
+    overflow: scroll;
+  }
+  .Education-section{
+    margin: 0;
+    padding: 20px;
+    background-color: rgb(7, 7, 7);
+    border-radius: 10px;
+  }
+  .Education-title{
+    margin: 0 10px 0 0;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .Education-degree{
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .Education-date{
+    margin: 0;
+    font-size: 13px;
+    font-weight: 100;
+  }
+  .Education-text{
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 1.5;
+  }
+}
