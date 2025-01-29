@@ -19,7 +19,8 @@ export default function NavBar() {
     <nav className="NavBar">
       <div style={{display: 'flex'}}>
         <div style={{position: 'relative'}}>
-          <FiHome className='NavBar-icon' onMouseEnter={() => setHome(true)} onMouseLeave={() => setHome(false)}/>
+          <FiHome className='NavBar-icon' onMouseEnter={() => setHome(true)} onMouseLeave={() => setHome(false)}
+                  onClick={() => navigate('/')}/>
           {home && <p className='NavBar-label NavBar-label_1'>Home</p>}
         </div>
 

@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { Navigation, Homepage, Education, Skills, Personal, Projects, Homepage1, Homepage2 } from './Components';
+import { Navigation, Homepage, Homepage1, Homepage2, Homepage3, Homepage4 } from './Components';
 import './index.css'
 
 function Layout() {
@@ -20,7 +20,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: '',
-        element: <Homepage />,
+        element: <Homepage4 />,
       },
       {
         path: 'education',
@@ -28,7 +28,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'experience',
-        element: <Homepage />,
+        element: <Homepage3 />,
       },
       {
         path: 'skills',

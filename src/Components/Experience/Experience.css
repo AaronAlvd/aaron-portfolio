@@ -1,0 +1,101 @@
+@media (max-width: 767px) {
+  .Experience{
+    margin: 8vh 20px;
+  }
+  .Experience-section {
+    background-color: rgb(45, 50, 70);
+    padding: 30px 0;
+    border-radius: 10px;
+  }
+  .Experience-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    border: 1px white solid;
+    border-radius: 10px;
+    margin: 15px 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1039px) {
+  .Experience{
+    margin: 8vh 20px;
+  }
+  .Experience-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    background-color: rgb(45, 50, 70);
+    padding: 30px 0;
+    border-radius: 10px;
+  }
+  .Experience-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    border: 1px white solid;
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 1039px) and (max-width: 1439px) {
+  .Experience{
+    padding: 8vh 0;
+  }
+  .Experience-section {
+    width: 600px;
+  }
+  .Experience-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    background-color: rgb(45, 50, 70);
+    padding: 30px 0;
+    border-radius: 10px;
+  }
+  .Experience-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    border: 1px white solid;
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .Experience{
+    padding: 8vh 0;
+  }
+  .Experience-section {
+    width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    background-color: rgb(45, 50, 70);
+    padding: 30px 0;
+    border-radius: 10px;
+  }
+  .Experience-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    border: 1px white solid;
+    border-radius: 10px;
+  }
+}
+
+.Experience{
+  color: white;
+}
+.Experience-title{
+  font-size: 20px;
+  margin: 0;
+}
