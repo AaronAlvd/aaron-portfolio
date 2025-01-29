@@ -11,18 +11,15 @@ export default function Personal() {
     <div className='Personal'>
       <div className="Personal-div">
         <img src={anonymous} className="Personal-image"/>
-        <div style={{width: '175px', textAlign: 'center'}} className="Personal-center">
+        <div style={{width: '245px', textAlign: 'center'}} className="Personal-center">
           <p className="Personal-name">Aaron Alvarado</p>
         </div>
-        <div style={{width: '270px', textAlign: 'center'}} className="Personal-center">
+        <div style={{width: '225px', textAlign: 'center'}} className="Personal-center">
           <p className="Personal-occupation">Full Stack Software Developer</p>
         </div>
-        {/* <div style={{width: '100%'}} className="Personal-center">
-          <div style={{width: '185px', display: 'flex', position: 'relative'}}>
-            <div className="Personal-blinking"></div>
-            <p className="Personal-search">Searching for job...</p>
-          </div>
-        </div> */}
+        <div style={{width: '125px', textAlign: 'center'}} className="Personal-center">
+          <p className="Personal-location">Sacramento, CA</p>
+        </div>
       </div>
     </div>
   );

@@ -6,13 +6,28 @@ import { TbWorld } from "react-icons/tb";
 import { AiOutlineInfoCircle } from "react-icons/ai";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes, faPlus, faCircle, faArrowLeft, faArrowRight, faRotateRight } from '@fortawesome/free-solid-svg-icons';
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './Navigation.css';
 
 export default function Navigation() {
   const [width, setWidth] = useState(window.innerWidth);
 
-  if (width < 1024) return null;
+  useEffect(() => {
+    // Define the resize handler
+    const handleResize = () => {
+      setWidth(window.innerWidth);
+    };
+
+    // Add event listener on component mount
+    window.addEventListener('resize', handleResize);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []); 
+
+  if (width < 1040) return <NavBar />;
 
   return (
     <>

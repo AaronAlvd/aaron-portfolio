@@ -1,11 +1,16 @@
-@media (min-width: 1024px) {
+@media (max-width: 1039px) {
   .Homepage-div{
-    background-color: rgb(23, 23, 23);
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0);
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1040px) {
   .Homepage-div{
-    background-color: rgb(23, 23, 23);
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0);
+    overflow: scroll;
+    gap: 40px;
   }
 }

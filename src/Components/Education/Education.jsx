@@ -6,13 +6,29 @@ export default function Education() {
   const [height, setHeight] = useState(window.innerHeight);
   const [width, setWidth] = useState(window.innerWidth);
 
+  useEffect(() => {
+    // Define the resize handler
+    const handleResize = () => {
+      setWidth(window.innerWidth);
+      setHeight(window.innerHeight);
+    };
+
+    // Add event listener on component mount
+    window.addEventListener('resize', handleResize);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []); 
+
   return (
-    <div className="Education" style={{height: `${width > 1023 ? height - 170 + 'px' : 'min-content'}`}}>
-      <div className="Education-section" style={{marginTop: '40px'}}>
-        <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}>
-          <div style={{display: 'flex', alignItems: 'center'}}>
+    <div className="Education" style={{height: `${width > 1039 ? height - 170 + 'px' : 'min-content'}`}}>
+      <div className="Education-section" >
+        <div className="Education-item">
+          <div className="Education-title_deg">
             <p className="Education-title">App Academy</p>
-            <p>-</p>
+            {width > 767 && <p>-</p>}
             <p className="Education-degree"><i>Full-Stack Software Developer</i></p>
           </div>
           <p className="Education-date">Mar 2024 - Feb 2025</p>
@@ -29,11 +45,11 @@ export default function Education() {
       </div>
 
       <div className="Education-section" style={{marginTop: '40px'}}>
-        <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}>
-          <div style={{display: 'flex', alignItems: 'center'}}>
+        <div className="Education-item">
+          <div className="Education-title_deg">
             <p className="Education-title">American River College</p>
-            <p>-</p>
-            <p className="Education-degree"><i>Molecular Biology/Computer Science</i></p>
+            {width > 767 && <p>-</p>}
+            <p className="Education-degree"><i>Molecular Biology</i></p>
           </div>
           <p className="Education-date">Aug 2021 - present</p>
         </div>
@@ -49,13 +65,13 @@ export default function Education() {
       </div>
 
       <div className="Education-section" style={{marginTop: '40px', marginBottom: '40px'}}>
-        <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}>
-          <div style={{display: 'flex', alignItems: 'center'}}>
+        <div className="Education-item">
+          <div className="Education-title_deg">
             <p className="Education-title">Grant Union High School</p>
-            <p>-</p>
+            {width > 767 && <p>-</p>}
             <p className="Education-degree"><i>Diploma</i></p>
           </div>
-          <p className="Education-date">AUg 2017 - June 2021</p>
+          <p className="Education-date">Aug 2017 - June 2021</p>
         </div>
         <p className="Education-text">
           Having completed my time at App Academy, I’m proud to have gained a strong foundation in full-stack web development. 
@@ -66,6 +82,9 @@ export default function Education() {
           HTML, CSS, and debugging—essential tools for building polished, responsive web apps. Overall, the experience has given me a 
           solid technical skillset and the confidence to tackle complex development challenges in a professional setting.
         </p>
+      </div>
+      <div style={{minHeight: '40px'}}>
+
       </div>
     </div>
   );

@@ -1,15 +1,15 @@
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { Navigation, Homepage, Education, Skills, Personal, Projects } from './Components';
+import { Navigation, Homepage, Education, Skills, Personal, Projects, Homepage1, Homepage2 } from './Components';
 import './index.css'
 
 function Layout() {
 
   return (
-    <>
+    <div className='background'>
      <Navigation />
      <Outlet />
-    </>
+    </div>
   )
 }
 
@@ -32,11 +32,11 @@ const router = createBrowserRouter([
       },
       {
         path: 'skills',
-        element: <Homepage />,
+        element: <Homepage1 />,
       },
       {
         path: 'projects',
-        element: <Homepage />,
+        element: <Homepage2 />,
       },
     ]
   }
