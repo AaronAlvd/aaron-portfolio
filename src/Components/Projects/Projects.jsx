@@ -5,6 +5,7 @@ import { FaRegFileLines } from "react-icons/fa6";
 import { useModal } from '../../context/modal';
 import groundbnb from '../../assets/Groundbnb.png';
 import DisplayImage from '../DisplayImage/DisplayImage';
+import wikiDocs from '../../assets/wikidocs2.png';
 import { useState, useEffect } from 'react';
 
 export default function Projects() {
@@ -58,7 +59,7 @@ export default function Projects() {
 
       <div className='Projects-section' style={{marginTop: '40px'}}>
         <p className='Projects-title'>WikiDocs</p>
-        <button onClick={() => setModalContent(<DisplayImage image={groundbnb}/>)} style={{margin: '15px 15px 15px 0', fontSize: '14px'}}>
+        <button onClick={() => setModalContent(<DisplayImage image={wikiDocs}/>)} style={{margin: '15px 15px 15px 0', fontSize: '14px'}}>
          View Image
         </button>
         <button onClick={() => window.open('https://ground-bnb-n5l7.onrender.com/', '_blank')}>
