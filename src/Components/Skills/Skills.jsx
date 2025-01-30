@@ -13,6 +13,7 @@ import openAILogo from '../../assets/openAI.svg';
 import driveLogo from '../../assets/googleDrive.svg';
 import expressLogo from '../../assets/express.svg';
 import flaskLogo from '../../assets/flask.svg';
+import githubLogo from '../../assets/github.png';
 
 
 import { useEffect, useState } from 'react';
@@ -110,6 +111,11 @@ export default function Skills() {
           <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
             <img src={flaskLogo} className='Skills-logo'/>
             <p>Flask</p>
+          </div>
+
+          <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+            <img src={githubLogo} className='Skills-logo'/>
+            <p>GitHub</p>
           </div>
         </div>
       </div>
