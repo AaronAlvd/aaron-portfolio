@@ -8,6 +8,12 @@ import nodejsLogo from '../../assets/nodejs.png';
 import sqlLogo from '../../assets/sql-server.png';
 import sqliteLogo from '../../assets/sqlite.png';
 import postgreLogo from '../../assets/postgre.png';
+import sequelizeLogo from '../../assets/sequelize.svg';
+import openAILogo from '../../assets/openAI.svg';
+import driveLogo from '../../assets/googleDrive.svg';
+import expressLogo from '../../assets/express.svg';
+import flaskLogo from '../../assets/flask.svg';
+
 
 import { useEffect, useState } from 'react';
 
@@ -80,35 +86,42 @@ export default function Skills() {
             <img src={sqliteLogo} className='Skills-logo' style={{backgroundColor: 'white', padding: '5px 10px', transform: 'translateY(15px)'}}/>
             <p style={{transform: 'translateY(22px)'}}>SQLite</p>
           </div>
+
+          <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+            <img src={sequelizeLogo} className='Skills-logo'/>
+            <p>Sequelize</p>
+          </div>
+
+          <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+            <img src={openAILogo} className='Skills-logo'/>
+            <p>OpenAI API</p>
+          </div>
+
+          <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+            <img src={driveLogo} className='Skills-logo'/>
+            <p>Drive API</p>
+          </div>
+
+          <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+            <img src={expressLogo} className='Skills-logo'/>
+            <p>ExpressJS</p>
+          </div>
+
+          <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+            <img src={flaskLogo} className='Skills-logo'/>
+            <p>Flask</p>
+          </div>
         </div>
       </div>
 
       <div className='Skills-section' style={{marginTop: '40px'}}>
         {/* <p className='Skills-title'>Libraries & Frameworks</p> */}
         <div className='Skills-div-logos_2'>
-          <div className='Skills-custom-logo'>
-            <p className='Skills-custom_logo-text'>Expressjs</p>
-          </div>
-
-          <div className='Skills-custom-logo'>
-            <p className='Skills-custom_logo-text'>Flask</p>
-          </div>
-
-          <div className='Skills-custom-logo'>
-            <p className='Skills-custom_logo-text'>Sequelize</p>
-          </div>
 
           <div className='Skills-custom-logo'>
             <p className='Skills-custom_logo-text'>SqlAlchemy</p>
           </div>
 
-          <div className='Skills-custom-logo'>
-            <p className='Skills-custom_logo-text'>google API</p>
-          </div>
-
-          <div className='Skills-custom-logo'>
-            <p className='Skills-custom_logo-text'>OpenAI API</p>
-          </div>
         </div>
       </div>
 

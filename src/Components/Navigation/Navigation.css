@@ -19,11 +19,12 @@
   justify-content: space-between;
   width: 200px;
   height: 30px;
-  margin: 5px 2px 0 2px;
+  margin: 5px 2px 0 5px;
   border-radius: 10px 10px 0 0;
 }
 .Navigation-tabs:hover{
-  background-color: rgb(38, 81, 125);
+  background-color: rgb(26, 74, 121);
+  border-radius: 10px;
 }
 .Navigation-tabs-active {
   display: flex;
@@ -35,6 +36,18 @@
   background-color: rgb(71, 71, 71);
   border-radius: 10px 10px 0 0;
   position: relative;
+}
+.Navigation-divider{
+  background-color: rgb(65, 65, 65);
+  min-width: 2px;
+  min-height: 15px;
+  transform: translateY(-2px)
+}
+.Navigation-divider_active{
+  background-color: rgb(32, 32, 32);
+  min-width: 2px;
+  min-height: 15px;
+  transform: translateY(-2px)
 }
 .Navigation-link{
   text-decoration: none;
