@@ -1,0 +1,101 @@
+@media (max-width: 480px) {
+  .Navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 5px 0;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    overflow: hidden;
+  }
+  .Navigation-div_name{
+    display: flex;
+    width: 170px;
+    height: min-content;
+    margin: 0 10px;
+    padding: 0;
+  }
+  .Navigation-div_nav{
+    display: flex;
+  } 
+  .Navigation-icon{
+    margin: 0 10px;
+    font-size: 20px;
+  }
+  .Navigation-text{
+    white-space: nowrap;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1039px) {
+  .Navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 5px 0;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    overflow: hidden;
+  }
+  .Navigation-div_name{
+    display: flex;
+    width: 170px;
+    height: min-content;
+    margin: 0 10px;
+    padding: 0;
+  }
+  .Navigation-div_nav{
+    display: flex;
+  } 
+  .Navigation-icon{
+    margin: 0 10px;
+    font-size: 25px;
+  }
+  .Navigation-text{
+    white-space: nowrap;
+    margin: 0;
+    font-size: 25px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 1040px) {
+  .Navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 10px 0;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    overflow: hidden;
+  }
+  .Navigation-div_name{
+    display: flex;
+    width: 170px;
+    height: min-content;
+    margin: 0 10px;
+    padding: 0;
+  }
+  .Navigation-div_nav{
+    display: flex;
+  }
+  .Navigation-text{
+    white-space: nowrap;
+    margin: 0;
+    font-size: 25px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .Navigation-text2{
+    white-space: nowrap;
+    margin: 0 10px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+  }  
+}
