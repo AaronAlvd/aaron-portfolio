@@ -23,7 +23,7 @@ export default function Education() {
   }, []); 
 
   return (
-    <div className="Education" style={{height: `${width > 1039 ? height - 170 + 'px' : 'min-content'}`}}>
+    <div className="Education" >
       <div className="Education-section" >
         <div className="Education-item">
           <div className="Education-title_deg">

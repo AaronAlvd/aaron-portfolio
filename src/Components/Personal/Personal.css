@@ -124,3 +124,7 @@
   white-space: nowrap;
   animation: typing 2000ms steps(15) forwards 5400ms, appear_caret 0ms forwards 5200ms, disappear_caret 0ms forwards 7700ms;
 }
+.Personal-logos{
+  font-size: 20px;
+  margin: 0 15px;
+}

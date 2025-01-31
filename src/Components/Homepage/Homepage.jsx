@@ -3,6 +3,7 @@ import Personal from '../Personal/Personal';
 import Education from '../Education/Education';
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import Footer from '../Footer/Footer';
 
 export default function Homepage() {
   const location = useLocation();
@@ -24,7 +25,7 @@ export default function Homepage() {
   }, []); 
 
   return (
-    <div className='Homepage-div'>
+    <div className='Homepage' style={{height: `${height - 60}px`}}>
       <Personal />
       <Education />
     </div>
