@@ -1,6 +1,7 @@
 import './Navigation.css';
 
 import { useState, useEffect } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 import { GoHomeFill } from "react-icons/go";
 import { GiGraduateCap } from "react-icons/gi";
@@ -8,6 +9,8 @@ import { MdOutlineSettings } from "react-icons/md";
 import { IoBriefcaseSharp } from "react-icons/io5";
 
 export default function Navigation() {
+  const location = useLocation();
+  const navigate = useNavigate();
   const [width, setWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -25,6 +28,10 @@ export default function Navigation() {
       window.removeEventListener('resize', handleResize);
     };
   }, []); 
+
+  useEffect(() => {
+
+  }, [location])
 
   if (width < 1040) {
     return (
@@ -50,10 +57,13 @@ export default function Navigation() {
         <p className='Navigation-text' style={{color: 'rgb(163, 54, 61)', marginLeft: '10px'}}>Alvarado</p>
       </div>
       <div className='Navigation-div_nav'>
-        <p className='Navigation-text2'>Home</p>
-        <p className='Navigation-text2'>Education</p>
-        <p className='Navigation-text2'>Projects</p>
-        <p className='Navigation-text2'>Experience</p>
+        <p className={location.pathname === '/' ? 'Navigation-text2_a' : 'Navigation-text2'} onClick={() => navigate('/')}>Home</p>
+        <p className={location.pathname === '/education' ? 'Navigation-text2_a' : 'Navigation-text2'} 
+           onClick={() => navigate('/education')}>Education</p>
+        <p className={location.pathname === '/projects' ? 'Navigation-text2_a' : 'Navigation-text2'} 
+           onClick={() => navigate('/projects')}>Projects</p>
+        <p className={location.pathname === '/experience' ? 'Navigation-text2_a' : 'Navigation-text2'} 
+           onClick={() => navigate('/experience')}>Experience</p>
       </div>
     </div>
   )

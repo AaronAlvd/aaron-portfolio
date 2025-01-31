@@ -98,4 +98,12 @@
     font-weight: 700;
     cursor: pointer;
   }  
+  .Navigation-text2_a{
+    white-space: nowrap;
+    margin: 0 10px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    color: rgb(163, 54, 61);
+  }
 }
