@@ -11,7 +11,8 @@ import { IoBriefcaseSharp } from "react-icons/io5";
 export default function Navigation() {
   const location = useLocation();
   const navigate = useNavigate();
-  const [width, setWidth] = useState(window.innerWidth);
+  const [width, setWidth] = useState(window.innerWidth); 
+  const [height, setHeight] = useState(window.innerHeight);
 
   useEffect(() => {
     // Define the resize handler
@@ -36,16 +37,10 @@ export default function Navigation() {
   if (width < 1040) {
     return (
       <div className='Navigation'>
-        <div className='Navigation-div_name'>
-          <p className='Navigation-text'>Aaron</p>
-          <p className='Navigation-text' style={{color: 'rgb(163, 54, 61)', marginLeft: '10px'}}>Alvarado</p>
-        </div>
-        <div className='Navigation-div_nav'>
-          <GoHomeFill className='Navigation-icon'/>
-          <GiGraduateCap className='Navigation-icon'/>
-          <IoBriefcaseSharp className='Navigation-icon'/>
-          <MdOutlineSettings className='Navigation-icon'/>
-        </div>
+        <GoHomeFill className='Navigation-icon' onClick={() => navigate('/')}/>
+        <GiGraduateCap className='Navigation-icon' onClick={() => navigate('/education')}/>
+        <IoBriefcaseSharp className='Navigation-icon' onClick={() => navigate('/projects')}/>
+        <MdOutlineSettings className='Navigation-icon' onClick={() => navigate('/skills')}/>
       </div>
     )
   }
@@ -62,8 +57,8 @@ export default function Navigation() {
            onClick={() => navigate('/education')}>Education</p>
         <p className={location.pathname === '/projects' ? 'Navigation-text2_a' : 'Navigation-text2'} 
            onClick={() => navigate('/projects')}>Projects</p>
-        <p className={location.pathname === '/experience' ? 'Navigation-text2_a' : 'Navigation-text2'} 
-           onClick={() => navigate('/experience')}>Experience</p>
+        <p className={location.pathname === '/skills' ? 'Navigation-text2_a' : 'Navigation-text2'} 
+           onClick={() => navigate('/skills')}>Skills</p>
       </div>
     </div>
   )
