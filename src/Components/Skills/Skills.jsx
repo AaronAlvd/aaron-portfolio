@@ -1,6 +1,8 @@
 import { useEffect, useState, useRef, useMemo } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
+import Desktop from './Desktop';
+
 import { FaPython, FaJs, FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa";
 import { SiSequelize, SiSqlalchemy, SiSqlite, SiFlask, SiPostgresql, SiRedux, SiAxios, SiExpress } from "react-icons/si";
 
@@ -39,7 +41,9 @@ export default function Skills() {
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, []); 
+  }, []);
+
+  if (width > 1039) return <Desktop />
 
   return ( 
     <div className="Skills">

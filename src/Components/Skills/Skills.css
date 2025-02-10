@@ -114,34 +114,63 @@
 }
 @media (min-width: 1040px) and (max-width: 1439px) {
   .Skills {
-
-  }
-  .Skills-section {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    position: relative;
   }
-  .Skills-div {
+  .Skills-left_div {
+    width: 12vw;
+    max-height: min-content;
+    position: sticky;
+    top: 0;
+  }
+  .Skills-right_div {
+    width: 85vw;
+    display: flex;
+    justify-content: center;
+  }
+  .Skills-right {
+    margin-top: 40px;
+    margin-bottom: 40px;
     display: grid;
     grid-template-columns: repeat(4, min-content);
+    grid-template-rows: minmax(200px, 200px);
+    row-gap: 40px;
+    column-gap: 40px;
+  }
+  .Skills-div_name {
+    width: 140px;
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+  }
+  .Skills-name {
+    width: 120px;
+    text-align: end;
+    white-space: nowrap;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 0;
+  }
+  .Skills-arrow {
+    font-size: 20px;
+    color: rgb(163, 54, 61);
   }
   .Skills-item {
-    position: relative;
-    margin: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
-    width: 160px;
-    height: 160px;
-    background-color: rgb(255, 255, 255, .04);
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.10);
+    border-radius: 15px;
   }
   .Skills-logo {
-    font-size: 70px;
+    font-size: 100px;
   }
   .Skills-logo_active {
+    font-size: 100px;
     color: rgb(163, 54, 61);
-    font-size: 70px;
   }
   .Skills-div_label {
     position: absolute;
@@ -155,50 +184,85 @@
     font-size: 16px;
     /* background-color: rgb(163, 54, 61); */
     background-color: white;
-    transform: translate(0, -100px);
+    transform: translate(0, -120px);
     color: rgb(36, 37, 46);
   }
-  .Skills-div_txtLarge {
-    margin: 30px 0 15px 0;
+  .Skills-div_label_time {
+    position: absolute;
     display: flex;
     justify-content: center;
-  }
-  .Skills-text_large {
-    font-size: 27px;
-    font-weight: 100;
-    margin: 0;
+    align-items: center;
+    border-radius: 10px;
+    /* width: 120px; */
+    padding: 0 20px;
+    height: 35px;
+    font-size: 18px;
+    /* background-color: rgb(163, 54, 61); */
+    /* background-color: white; */
+    transform: translate(0, 80px);
+    color: rgb(36, 37, 46);
   }
 }
 @media (min-width: 1440px) {
   .Skills {
-
-  }
-  .Skills-section {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    position: relative;
   }
-  .Skills-div {
+  .Skills-left_div {
+    border: 1px solid;
+    width: 12vw;
+    max-height: min-content;
+    position: sticky;
+    top: 0;
+  }
+  .Skills-right_div {
+    width: 85vw;
+    display: flex;
+    justify-content: center;
+  }
+  .Skills-right {
+    margin-top: 40px;
+    margin-bottom: 40px;
     display: grid;
     grid-template-columns: repeat(4, min-content);
+    grid-template-rows: minmax(200px, 200px);
+    row-gap: 40px;
+    column-gap: 40px;
+  }
+  .Skills-div_name {
+    width: 140px;
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+  }
+  .Skills-name {
+    width: 120px;
+    text-align: end;
+    white-space: nowrap;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 0;
+  }
+  .Skills-arrow {
+    font-size: 20px;
+    color: rgb(163, 54, 61);
   }
   .Skills-item {
-    position: relative;
-    margin: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
-    width: 160px;
-    height: 160px;
-    background-color: rgb(255, 255, 255, .04);
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.10);
+    border-radius: 15px;
   }
   .Skills-logo {
-    font-size: 70px;
+    font-size: 100px;
   }
   .Skills-logo_active {
+    font-size: 100px;
     color: rgb(163, 54, 61);
-    font-size: 70px;
   }
   .Skills-div_label {
     position: absolute;
@@ -212,17 +276,22 @@
     font-size: 16px;
     /* background-color: rgb(163, 54, 61); */
     background-color: white;
-    transform: translate(0, -100px);
+    transform: translate(0, -120px);
     color: rgb(36, 37, 46);
   }
-  .Skills-div_txtLarge {
-    margin: 30px 0 15px 0;
+  .Skills-div_label_time {
+    position: absolute;
     display: flex;
     justify-content: center;
-  }
-  .Skills-text_large {
-    font-size: 27px;
-    font-weight: 100;
-    margin: 0;
+    align-items: center;
+    border-radius: 10px;
+    /* width: 120px; */
+    padding: 0 20px;
+    height: 35px;
+    font-size: 18px;
+    /* background-color: rgb(163, 54, 61); */
+    /* background-color: white; */
+    transform: translate(0, 80px);
+    color: rgb(36, 37, 46);
   }
 }

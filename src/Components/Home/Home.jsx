@@ -15,7 +15,7 @@ export default function Home() {
         <p className='Home-location'>Sacramento, CA</p>
         <p className='Home-bio'>
           I'm a 21 year old college student with a deep passion for web devlopment. My strong problem solving ability allows me to solve any 
-          problem put before me. 
+          problem I face. 
         </p>
       </div>
       <div className='Home-body'>
