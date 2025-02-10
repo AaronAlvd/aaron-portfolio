@@ -52,13 +52,14 @@ export default function Navigation() {
         <p className='Navigation-text' style={{color: 'rgb(163, 54, 61)', marginLeft: '10px'}}>Alvarado</p>
       </div>
       <div className='Navigation-div_nav'>
-        <p className={location.pathname === '/' ? 'Navigation-text2_a' : 'Navigation-text2'} onClick={() => navigate('/')}>Home</p>
-        <p className={location.pathname === '/education' ? 'Navigation-text2_a' : 'Navigation-text2'} 
-           onClick={() => navigate('/education')}>Education</p>
-        <p className={location.pathname === '/projects' ? 'Navigation-text2_a' : 'Navigation-text2'} 
-           onClick={() => navigate('/projects')}>Projects</p>
-        <p className={location.pathname === '/skills' ? 'Navigation-text2_a' : 'Navigation-text2'} 
-           onClick={() => navigate('/skills')}>Skills</p>
+        <p className={location.pathname === '/aaron-portfolio' ? 'Navigation-text2_a' : 'Navigation-text2'} 
+           onClick={() => navigate('/aaron-portfolio')}>Home</p>
+        <p className={location.pathname === '/aaron-portfolio/education' ? 'Navigation-text2_a' : 'Navigation-text2'} 
+           onClick={() => navigate('/aaron-portfolio/education')}>Education</p>
+        <p className={location.pathname === '/aaron-portfolio/projects' ? 'Navigation-text2_a' : 'Navigation-text2'} 
+           onClick={() => navigate('/aaron-portfolio/projects')}>Projects</p>
+        <p className={location.pathname === '/aaron-portfolio/skills' ? 'Navigation-text2_a' : 'Navigation-text2'} 
+           onClick={() => navigate('/aaron-portfolio/skills')}>Skills</p>
       </div>
     </div>
   )

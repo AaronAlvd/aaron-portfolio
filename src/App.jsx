@@ -29,15 +29,15 @@ const router = createBrowserRouter([
         element: <Home />
       },
       {
-        path: '/education',
+        path: 'education',
         element: <Education />
       },
       {
-        path: '/skills',
+        path: 'skills',
         element: <Skills />
       },
       {
-        path: '/projects',
+        path: 'projects',
         element: <Projects />
       }
     ]
