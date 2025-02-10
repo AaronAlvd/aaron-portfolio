@@ -37,10 +37,10 @@ export default function Navigation() {
   if (width < 1040) {
     return (
       <div className='Navigation'>
-        <GoHomeFill className='Navigation-icon' onClick={() => navigate('/')}/>
-        <GiGraduateCap className='Navigation-icon' onClick={() => navigate('/education')}/>
-        <IoBriefcaseSharp className='Navigation-icon' onClick={() => navigate('/projects')}/>
-        <MdOutlineSettings className='Navigation-icon' onClick={() => navigate('/skills')}/>
+        <GoHomeFill className='Navigation-icon' onClick={() => navigate('/aaron-portfolio/')}/>
+        <GiGraduateCap className='Navigation-icon' onClick={() => navigate('/aaron-portfolio/education')}/>
+        <IoBriefcaseSharp className='Navigation-icon' onClick={() => navigate('/aaron-portfolio/projects')}/>
+        <MdOutlineSettings className='Navigation-icon' onClick={() => navigate('/aaron-portfolio/skills')}/>
       </div>
     )
   }
