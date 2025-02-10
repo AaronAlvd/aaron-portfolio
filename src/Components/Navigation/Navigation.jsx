@@ -37,10 +37,10 @@ export default function Navigation() {
   if (width < 1040) {
     return (
       <div className='Navigation'>
-        <GoHomeFill className='Navigation-icon' onClick={() => navigate('/aaron-portfolio/')}/>
-        <GiGraduateCap className='Navigation-icon' onClick={() => navigate('/aaron-portfolio/education')}/>
-        <IoBriefcaseSharp className='Navigation-icon' onClick={() => navigate('/aaron-portfolio/projects')}/>
-        <MdOutlineSettings className='Navigation-icon' onClick={() => navigate('/aaron-portfolio/skills')}/>
+        <GoHomeFill className='Navigation-icon' onClick={() => navigate('/')}/>
+        <GiGraduateCap className='Navigation-icon' onClick={() => navigate('/education')}/>
+        <IoBriefcaseSharp className='Navigation-icon' onClick={() => navigate('/projects')}/>
+        <MdOutlineSettings className='Navigation-icon' onClick={() => navigate('/skills')}/>
       </div>
     )
   }
@@ -53,13 +53,13 @@ export default function Navigation() {
       </div>
       <div className='Navigation-div_nav'>
         <p className={location.pathname === '/aaron-portfolio' ? 'Navigation-text2_a' : 'Navigation-text2'} 
-           onClick={() => navigate('/aaron-portfolio')}>Home</p>
-        <p className={location.pathname === '/aaron-portfolio/education' ? 'Navigation-text2_a' : 'Navigation-text2'} 
-           onClick={() => navigate('/aaron-portfolio/education')}>Education</p>
-        <p className={location.pathname === '/aaron-portfolio/projects' ? 'Navigation-text2_a' : 'Navigation-text2'} 
-           onClick={() => navigate('/aaron-portfolio/projects')}>Projects</p>
-        <p className={location.pathname === '/aaron-portfolio/skills' ? 'Navigation-text2_a' : 'Navigation-text2'} 
-           onClick={() => navigate('/aaron-portfolio/skills')}>Skills</p>
+           onClick={() => navigate('/')}>Home</p>
+        <p className={location.pathname === '/education' ? 'Navigation-text2_a' : 'Navigation-text2'} 
+           onClick={() => navigate('/education')}>Education</p>
+        <p className={location.pathname === '/projects' ? 'Navigation-text2_a' : 'Navigation-text2'} 
+           onClick={() => navigate('/projects')}>Projects</p>
+        <p className={location.pathname === '/skills' ? 'Navigation-text2_a' : 'Navigation-text2'} 
+           onClick={() => navigate('/skills')}>Skills</p>
       </div>
     </div>
   )
