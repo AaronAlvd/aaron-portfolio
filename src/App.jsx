@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { createBrowserRouter, RouterProvider, Outlet} from 'react-router-dom';
-import { Navigation, Home, Education, Skills, Projects, Footer } from './Components';
+import { Navigation, Home, Education, Skills, Projects, Footer, Projects2 } from './Components';
 import './index.css'
 
 function Layout() {
@@ -10,7 +10,7 @@ function Layout() {
   return (
     <>
     <Navigation/>
-    <div style={{height: `${height - 60}px`, overflowY: 'scroll'}}>
+    <div style={{height: `${height - 60}px`, overflowY: 'scroll', width: '100vw', overflowX: 'hidden'}}>
       <Outlet/>
       <Footer/>
     </div>
@@ -38,7 +38,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'projects',
-        element: <Projects />
+        element: <Projects2 />
       }
     ]
   }

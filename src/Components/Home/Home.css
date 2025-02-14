@@ -65,7 +65,8 @@
 }
 @media (min-width: 1440px) {
   .Home {
-
+   width: 100vw;
+   box-sizing: border-box;
   }
   .Home-header {
     width: 100vw;

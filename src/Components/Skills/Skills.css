@@ -209,7 +209,6 @@
     position: relative;
   }
   .Skills-left_div {
-    border: 1px solid;
     width: 12vw;
     max-height: min-content;
     position: sticky;
