@@ -1,482 +1,352 @@
 @media (max-width: 767px) {
   .Projects {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    position: relative;
-    overflow-x: hidden;
-    width: 100%;
-    height: auto;
-  }
-  .Projects-box {
-    display: flex;
-    justify-content: center;
-    transition: transform 0.4s ease-in-out;
-    width: 97vw;
-    height: min-content;
-    box-sizing: border-box;
-    overflow: hidden;
-    margin-top: 30px;
-  }
-  .Projects-section {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    min-width: 97vw;
-    height: min-content;
-    border-radius: 10px;
-    box-sizing: border-box;
-    transition: transform 1000ms ease;
-  }
-  .Projects-section_div {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 15px;
-    min-width: 95%;
-    max-width: 95%;
-    height: min-content;
-    border-radius: 10px;
-    box-sizing: border-box;
-    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.3);
   }
-  .Projects-alt_body {
-    width: 100%;
-  }
-  .Projects-col {
-    width: 100%;
-  }
-  .Projects-div_logos {
-    display: grid;
-    grid-template-columns: 50% 50%;
-  }
-  .Projects-div_logo {
+  .Projects-left {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-around;
   }
-  .Projects-logo {
-    height: 50px;
+  .Projects-left_item {
+    display: flex;
+    align-items: center;
   }
   .Projects-title {
-    width: 100%;
-    text-align: center;
-  }
-  .Projects-name {
-    margin: 10px 0 15px 0;
-    font-size: 25px;
+    cursor: pointer;
+    margin: 20px 0;
+    text-align: end;
+    width: 110px;
+    white-space: nowrap;
+    font-size: 18px;
     font-weight: 700;
   }
-  .Projects-date {
-    font-size: 16px;
-    font-weight: 700;
-    color: rgb(163, 54, 61);
-    margin: 0;
-  }
-  .Projects-text_large {
-    margin: 10px 0 15px 0;
+  .Projects-title_active {
+    cursor: pointer;
+    margin: 20px 0;
+    text-align: end;
+    width: 110px;
+    white-space: nowrap;
     font-size: 18px;
     font-weight: 700;
     color: rgb(163, 54, 61);
   }
+  .Projects-right {
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+  }
+  .Projects-right_item {
+    width: 100%;
+  }
+  .Projects-header {
+    display: flex;
+    justify-content: center;
+  }
+  .Projects-date {
+    margin: 5px 15px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .Projects-techs {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
+  }
+  .Projects-row2 {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  .Projects-text_large {
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(163, 54, 61);
+  }
+  .Projects-logo {
+    height: 40px;
+    width: 40px;
+    margin: 5px 0;
+  }
+  .Projects-icon {
+    font-size: 40px;
+  }
+  .Projects-icon:hover {
+    color: rgb(163, 54, 61);
+  }
+  .Projects-icon_label {
+    position: absolute;
+    font-size: 12px;
+    font-weight: 700;
+    color: black;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transform: translate(0, 40px);
+  }
+  .Projects-img {
+    width: 100%;
+    border-radius: 10px;
+  }
   .Projects-text {
     font-size: 14px;
     line-height: 1.5;
-  }
-  .Projects-div_button {
-    margin: 50px 0;
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-  }
-  .Projects-button {
-    width: 130px;
-    height: 27px;
-    border-radius: 5px;
-    border: none;
-    background-color: rgb(163, 54, 61);
-    color: white;
-    font-size: 15px;
-    font-weight: 400;
   }
 }
 @media (min-width: 768px) and (max-width: 1039px) {
   .Projects {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 90vh;
-  }
-  .Projects-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.4s ease-in-out;
-    min-width: 768px;
-    max-width: 768px;
-    height: 800px;
-    box-sizing: border-box;
-    overflow: hidden;
-  }
-  .Projects-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    min-width: 768px;
-    max-width: 768px;
-    height: 800px;
-    border-radius: 10px;
-    box-sizing: border-box;
-    transition: transform 1000ms ease;
-  }
-  .Projects-section_div {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 15px;
-    min-width: 700px;
-    max-width: 700px;
-    height: 700px;
-    border-radius: 10px;
-    box-sizing: border-box;
-    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.3);
   }
-  .Projects-alt_body {
-    width: 100%;
-  }
-  .Projects-col {
-    width: 100%;
-  }
-  .Projects-div_logos {
+  .Projects-left {
     display: flex;
+    justify-content: space-around;
   }
-  .Projects-div_logo {
+  .Projects-left_item {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    margin: 0 20px 0 0;
-  }
-  .Projects-logo {
-    height: 50px;
   }
   .Projects-title {
-    width: 100%;
-    text-align: center;
-  }
-  .Projects-name {
-    margin: 10px 0 15px 0;
-    font-size: 25px;
+    cursor: pointer;
+    margin: 20px 0;
+    text-align: end;
+    width: 110px;
+    white-space: nowrap;
+    font-size: 18px;
     font-weight: 700;
   }
-  .Projects-date {
-    font-size: 16px;
-    font-weight: 700;
-    color: rgb(163, 54, 61);
-    margin: 0;
-  }
-  .Projects-text_large {
-    margin: 10px 0 15px 0;
+  .Projects-title_active {
+    cursor: pointer;
+    margin: 0 2px 0 10px;
+    text-align: end;
+    width: 110px;
+    white-space: nowrap;
     font-size: 18px;
     font-weight: 700;
     color: rgb(163, 54, 61);
   }
-  .Projects-text {
-    font-size: 14px;
-    line-height: 1.5;
+  .Projects-right {
+    padding: 10px 30px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
   }
-  .Projects-div_button {
-    margin: 50px 0;
+  .Projects-right_item {
+    width: 100%;
+  }
+  .Projects-header {
     display: flex;
     justify-content: center;
   }
-  .Projects-button {
-    width: 150px;
-    height: 27px;
-    border-radius: 5px;
-    border: none;
-    margin: 0 20px;
-    background-color: rgb(163, 54, 61);
-    color: white;
-    font-size: 15px;
-    font-weight: 400;
+  .Projects-date {
+    margin: 5px 15px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .Projects-row2 {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  .Projects-text_large {
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(163, 54, 61);
+  }
+  .Projects-logo {
+    height: 40px;
+    width: 40px;
+    margin: 5px 0;
+  }
+  .Projects-icon {
+    font-size: 40px;
+  }
+  .Projects-icon:hover {
+    color: rgb(163, 54, 61);
+  }
+  .Projects-icon_label {
+    position: absolute;
+    font-size: 12px;
+    font-weight: 700;
+    color: black;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transform: translate(0, 40px);
+  }
+  .Projects-img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .Projects-text {
+    font-size: 14px;
+    line-height: 1.5;
   }
 }
 @media (min-width: 1040px) and (max-width: 1439px) {
   .Projects {
     display: flex;
-    /* align-items: center; */
-    justify-content: center;
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 90vh;
   }
-  .Projects-box {
-    display: flex;
-    /* align-items: center; */
-    justify-content: center;
-    transition: transform 0.4s ease-in-out;
-    width: 1000px;
-    height: 650px;
-    box-sizing: border-box;
-    overflow: hidden;
-    margin-top: 40px;
+  .Projects-left {
+    width: 150px;
+    height: min-content;
+    position: sticky;
+    top: 40px;
   }
-  .Projects-section {
+  .Projects-left_item {
+    margin: 0 0 40px 0;
     display: flex;
-    /* align-items: center; */
-    justify-content: center;
-    padding: 10px;
-    min-width: 1000px;
-    height: 650px;
-    border-radius: 10px;
-    box-sizing: border-box;
-    transition: transform 1000ms ease;
-  }
-  .Projects-section_div {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 15px;
-    min-width: 900px;
-    max-width: 900px;
-    height: 580px;
-    border-radius: 10px;
-    box-sizing: border-box;
-    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.7);
-    transition: transform 500ms;
-    overflow: hidden;
-  }
-  .Projects-section_div:active {
-    transform: scale(.99);
-    transition: transform 500ms;
   }
   .Projects-title {
-    display: flex;
-    justify-content: space-between;
+    cursor: pointer;
+    margin: 0 2px 0 10px;
+    text-align: end;
+    width: 110px;
+    white-space: nowrap;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .Projects-right {
+    padding: 10px 30px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+  }
+  .Projects-right_item {
     width: 100%;
   }
-  .Projects-name {
-    margin: 0;
-    font-size: 25px;
-    font-weight: 700;
+  .Projects-header {
+    display: flex;
+    justify-content: center;
   }
   .Projects-date {
-    margin: 0;
+    margin: 5px 15px;
+    font-size: 20px;
     font-weight: 700;
   }
-  .Projects-alt_body {
+  .Projects-row2 {
+    margin: 20px 0;
     display: flex;
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  .Projects-col {
-    width: min-content;
-    margin-right: 20px;
+    justify-content: space-around;
   }
   .Projects-text_large {
-    margin: 15px 0;
     font-size: 18px;
     font-weight: 700;
     color: rgb(163, 54, 61);
   }
-  .Projects-div_logos {
-    display: flex;
-  }
-  .Projects-div_logo {
-    width: min-content;
-    text-align: center;
-    margin: 0 20px 0 0;
-  }
   .Projects-logo {
-    width: 35px;
-    height: 35px;
+    height: 40px;
+    width: 40px;
+    margin: 5px 0;
   }
-  .Projects-logo_label {
-    margin: 0;
-    font-size: 13px;
+  .Projects-icon {
+    font-size: 40px;
+  }
+  .Projects-icon:hover {
+    color: rgb(163, 54, 61);
+  }
+  .Projects-icon_label {
+    position: absolute;
+    font-size: 12px;
     font-weight: 700;
-    white-space: nowrap;
-    /* color: rgb(163, 54, 61); */
+    color: black;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transform: translate(0, 40px);
+  }
+  .Projects-img {
+    width: 100%;
+    border-radius: 10px;
   }
   .Projects-text {
     font-size: 14px;
     line-height: 1.5;
-    /* color: rgb(163, 54, 61); */
-  }
-  .Projects-link {
-    color: rgb(255, 255, 255);
-    font-size: 13px;
-    font-weight: 700;
-  }
-  .Projects-link:hover {
-    color: rgb(0, 72, 255) ;
-  }
-  .Projects-div_button {
-    margin: 50px 0;
-    display: flex;
-    justify-content: center;
-  }
-  .Projects-button {
-    width: 150px;
-    height: 27px;
-    border-radius: 5px;
-    border: none;
-    margin: 0 20px;
-    background-color: rgb(163, 54, 61);
-    color: white;
-    font-size: 15px;
-    font-weight: 400;
   }
 }
 @media (min-width: 1440px) {
   .Projects {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 90vh
   }
-  .Projects-box {
+  .Projects-left {
+    width: 150px;
+    height: min-content;
+    position: sticky;
+    top: 40px;
+  }
+  .Projects-left_item {
+    margin: 0 0 40px 0;
     display: flex;
     align-items: center;
-    justify-content: center;
-    transition: transform 0.4s ease-in-out;
-    width: 1100px;
-    height: 600px;
-    box-sizing: border-box;
-    overflow: hidden;
-  }
-  .Projects-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    min-width: 1100px;
-    height: 500px;
-    border-radius: 10px;
-    box-sizing: border-box;
-    transition: transform 1000ms ease;
-  }
-  .Projects-section_div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 15px;
-    min-width: 1000px;
-    max-width: 1000px;
-    height: 500px;
-    border-radius: 10px;
-    box-sizing: border-box;
-    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.7);
-    transition: transform 500ms;
-  }
-  .Projects-section_div:active {
-    transform: scale(.99);
-    transition: transform 500ms;
   }
   .Projects-title {
-    display: flex;
-    justify-content: space-between;
+    cursor: pointer;
+    margin: 0 2px 0 10px;
+    text-align: end;
+    width: 110px;
+    white-space: nowrap;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .Projects-right {
+    padding: 10px 30px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+  }
+  .Projects-right_item {
     width: 100%;
   }
-  .Projects-name {
-    margin: 0;
-    font-size: 25px;
-    font-weight: 700;
+  .Projects-header {
+    display: flex;
+    justify-content: center;
   }
   .Projects-date {
-    margin: 0;
+    margin: 5px 15px;
+    font-size: 20px;
     font-weight: 700;
   }
-  .Projects-alt_body {
+  .Projects-row2 {
+    margin: 20px 0;
     display: flex;
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  .Projects-col {
-    width: min-content;
-    margin-right: 20px;
+    justify-content: space-around;
   }
   .Projects-text_large {
-    margin: 15px 0;
     font-size: 18px;
     font-weight: 700;
     color: rgb(163, 54, 61);
   }
-  .Projects-div_logos {
-    display: flex;
-  }
-  .Projects-div_logo {
-    display: flex;
-    flex-direction: column;
-    width: min-content;
-    align-items: center;
-    text-align: center;
-    margin-right: 20px;
-  }
   .Projects-logo {
-    width: 35px;
-    height: 35px;
+    height: 40px;
+    width: 40px;
+    margin: 5px 0;
   }
-  .Projects-logo_label {
-    margin: 0;
-    font-size: 13px;
+  .Projects-icon {
+    font-size: 40px;
+  }
+  .Projects-icon:hover {
+    color: rgb(163, 54, 61);
+  }
+  .Projects-icon_label {
+    position: absolute;
+    font-size: 12px;
     font-weight: 700;
-    white-space: nowrap;
-    text-align: center;
+    color: black;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transform: translate(0, 40px);
+  }
+  .Projects-img {
+    width: 100%;
+    border-radius: 10px;
   }
   .Projects-text {
     font-size: 14px;
     line-height: 1.5;
   }
-  .Projects-link {
-    color: rgb(255, 255, 255);
-    font-size: 13px;
-    font-weight: 700;
-  }
-  .Projects-link:hover {
-    color: rgb(0, 72, 255) ;
-  }
-  .Projects-div_button {
-    margin: 50px 0;
-    display: flex;
-    justify-content: center;
-  }
-  .Projects-button {
-    width: 150px;
-    height: 27px;
-    border-radius: 5px;
-    border: none;
-    margin: 0 20px;
-    background-color: rgb(163, 54, 61);
-    color: white;
-    font-size: 15px;
-    font-weight: 400;
-  }
 }
 
-.arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 24px;
-  cursor: pointer;
-  z-index: 1;
-}
-.left {
-  left: 10px;
-}
-.right {
-  right: 10px;
+.Projects-arrow {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(163, 54, 61);
 }

@@ -161,8 +161,8 @@ export default function Education() {
               <p className="Education-degree">High School Diploma</p>
               <p className="Education-school">Grant Union High School</p>
               <div style={{display: 'flex', justifyContent: 'space-around'}}>
-                <p style={{color: 'rgb(163, 54, 61)', fontWeight: '700'}}>This Way Ahead</p>
-                <p style={{color: 'rgb(163, 54, 61)', fontWeight: '700'}}></p>
+                <p style={{color: 'rgb(163, 54, 61)', fontWeight: '700'}}>Academic Honors</p>
+                <p style={{color: 'rgb(163, 54, 61)', fontWeight: '700'}}>Certificate of Achievement</p>
                 <p style={{color: 'rgb(163, 54, 61)', fontWeight: '700'}}>This Way Ahead</p>
               </div>
             </div>

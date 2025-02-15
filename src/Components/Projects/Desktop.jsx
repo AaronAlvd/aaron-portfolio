@@ -11,7 +11,7 @@ import { SiSequelize, SiSqlalchemy, SiSqlite, SiFlask, SiPostgresql, SiRedux, Si
 import { AiOutlineOpenAI } from "react-icons/ai";
 import { VscVscode } from "react-icons/vsc";
 
-import "./Projects2.css" 
+import "./Projects.css" 
 
 export default function Desktop() {
   const location = useLocation(); 
@@ -57,75 +57,75 @@ export default function Desktop() {
   }, []);
 
   return ( 
-    <div className="Projects2">
-      <div className="Projects2-left">
-        <div className="Projects2-left_item">
-          <p className="Projects2-title" onClick={() => setActive('social')}>Social App</p>
-          {active === 'social' && <MdPlayArrow className="Projects2-arrow"/>}
+    <div className="Projects">
+      <div className="Projects-left">
+        <div className="Projects-left_item">
+          <p className="Projects-title" onClick={() => setActive('social')}>Social App</p>
+          {active === 'social' && <MdPlayArrow className="Projects-arrow"/>}
         </div>
-        <div className="Projects2-left_item">
-          <p className="Projects2-title" onClick={() => setActive('groundbnb')}>GroundBnb</p>
-          {active === 'groundbnb' && <MdPlayArrow className="Projects2-arrow"/>}
+        <div className="Projects-left_item">
+          <p className="Projects-title" onClick={() => setActive('groundbnb')}>GroundBnb</p>
+          {active === 'groundbnb' && <MdPlayArrow className="Projects-arrow"/>}
         </div>
-        <div className="Projects2-left_item">
-          <p className="Projects2-title" onClick={() => setActive('wikidocs')}>WikiDocs</p>
-          {active === 'wikidocs' && <MdPlayArrow className="Projects2-arrow"/>}
+        <div className="Projects-left_item">
+          <p className="Projects-title" onClick={() => setActive('wikidocs')}>WikiDocs</p>
+          {active === 'wikidocs' && <MdPlayArrow className="Projects-arrow"/>}
         </div>
       </div>
-      <div className="Projects2-right" style={{width: `${width - 152}px`}}>
+      <div className="Projects-right" style={{width: `${width - 152}px`}}>
         {active === 'social' && 
-        <div className="Projects2-right_item">
-          <div className="Projects2-header">
-            <p className="Projects2-date">2025</p>
+        <div className="Projects-right_item">
+          <div className="Projects-header">
+            <p className="Projects-date">2025</p>
           </div>
 
-          <div className="Projects2-row2">
+          <div className="Projects-row2">
             <div style={{display: 'flex', justifyContent: 'space-around', width: '100%'}}>
               <div style={{display: 'flex', justifyContent: 'center'}}>
-                <FaJs className="Projects2-icon" onMouseEnter={() => setJavascript(true)} onMouseLeave={() => setJavascript(false)}/>
-                {javascript && <p className="Projects2-icon_label">JavaScript</p>}
+                <FaJs className="Projects-icon" onMouseEnter={() => setJavascript(true)} onMouseLeave={() => setJavascript(false)}/>
+                {javascript && <p className="Projects-icon_label">JavaScript</p>}
               </div>
               <div style={{display: 'flex', justifyContent: 'center'}}>
-                <FaReact className="Projects2-icon" onMouseEnter={() => setReact(true)} onMouseLeave={() => setReact(false)}/>
-                {react && <p className="Projects2-icon_label">React</p>}
+                <FaReact className="Projects-icon" onMouseEnter={() => setReact(true)} onMouseLeave={() => setReact(false)}/>
+                {react && <p className="Projects-icon_label">React</p>}
               </div>
               <div style={{display: 'flex', justifyContent: 'center'}}>
-                <SiSequelize className="Projects2-icon" onMouseEnter={() => setSequelize(true)} onMouseLeave={() => setSequelize(false)}/>
-                {sequelize && <p className="Projects2-icon_label">Sequelize</p>}
+                <SiSequelize className="Projects-icon" onMouseEnter={() => setSequelize(true)} onMouseLeave={() => setSequelize(false)}/>
+                {sequelize && <p className="Projects-icon_label">Sequelize</p>}
               </div>
               <div style={{display: 'flex', justifyContent: 'center'}}>
-                <SiPostgresql className="Projects2-icon" onMouseEnter={() => setPostgre(true)} onMouseLeave={() => setPostgre(false)}/>
-                {postgre && <p className="Projects2-icon_label">PostgreSQL</p>}
+                <SiPostgresql className="Projects-icon" onMouseEnter={() => setPostgre(true)} onMouseLeave={() => setPostgre(false)}/>
+                {postgre && <p className="Projects-icon_label">PostgreSQL</p>}
               </div>
               <div style={{display: 'flex', justifyContent: 'center'}}>
-                <SiAxios className="Projects2-icon" onMouseEnter={() => setAxios(true)} onMouseLeave={() => setAxios(false)}/>
-                {axios && <p className="Projects2-icon_label">Axios</p>}
+                <SiAxios className="Projects-icon" onMouseEnter={() => setAxios(true)} onMouseLeave={() => setAxios(false)}/>
+                {axios && <p className="Projects-icon_label">Axios</p>}
               </div>
               <div style={{display: 'flex', justifyContent: 'center'}}>
-                <SiExpress className="Projects2-icon" onMouseEnter={() => setExpress(true)} onMouseLeave={() => setExpress(false)}/>
-                {express && <p className="Projects2-icon_label">Express</p>}
+                <SiExpress className="Projects-icon" onMouseEnter={() => setExpress(true)} onMouseLeave={() => setExpress(false)}/>
+                {express && <p className="Projects-icon_label">Express</p>}
               </div>
               <div style={{display: 'flex', justifyContent: 'center'}}>
-                <SiRedux className="Projects2-icon" onMouseEnter={() => setRedux(true)} onMouseLeave={() => setRedux(false)}/>
-                {redux && <p className="Projects2-icon_label">Redux</p>}
+                <SiRedux className="Projects-icon" onMouseEnter={() => setRedux(true)} onMouseLeave={() => setRedux(false)}/>
+                {redux && <p className="Projects-icon_label">Redux</p>}
               </div>
               <div style={{display: 'flex', justifyContent: 'center'}}>
-                <FaNodeJs className="Projects2-icon" onMouseEnter={() => setNode(true)} onMouseLeave={() => setNode(false)}/>
-                {node && <p className="Projects2-icon_label">Node</p>}
+                <FaNodeJs className="Projects-icon" onMouseEnter={() => setNode(true)} onMouseLeave={() => setNode(false)}/>
+                {node && <p className="Projects-icon_label">Node</p>}
               </div>
               <div style={{display: 'flex', justifyContent: 'center'}}>
-                <SiRender className="Projects2-icon" onMouseEnter={() => setRender(true)} onMouseLeave={() => setRender(false)}/>
-                {render && <p className="Projects2-icon_label">Render</p>}
+                <SiRender className="Projects-icon" onMouseEnter={() => setRender(true)} onMouseLeave={() => setRender(false)}/>
+                {render && <p className="Projects-icon_label">Render</p>}
               </div>
               <div style={{display: 'flex', justifyContent: 'center'}}>
-                <FaGoogleDrive className="Projects2-icon" onMouseEnter={() => setDrive(true)} onMouseLeave={() => setDrive(false)}/>
-                {drive && <p className="Projects2-icon_label">Drive API</p>}
+                <FaGoogleDrive className="Projects-icon" onMouseEnter={() => setDrive(true)} onMouseLeave={() => setDrive(false)}/>
+                {drive && <p className="Projects-icon_label">Drive API</p>}
               </div>
             </div>
           </div>
 
           <div>
-            <p className="Projects2-text">
+            <p className="Projects-text">
             Social App is a real-time social platform designed to enhance user engagement and foster meaningful connections. Currently in development, it 
             enables users to share posts, comment, and interact seamlessly while maintaining a smooth and intuitive experience. Built with React and Redux 
             on the front end and powered by Express and Sequelize on the backend, Social App ensures efficient state management and real-time updates. A 
@@ -133,114 +133,114 @@ export default function Desktop() {
             progresses, new features and optimizations are continuously being added to improve scalability, accessibility, and overall performance. With a 
             focus on modern design and seamless interaction, Social App is evolving into a dynamic and engaging platform for users to connect and share.
             </p>
-            <img src={social} className="Projects2-img"/>
+            <img src={social} className="Projects-img"/>
           </div>
         </div>}
 
         {active === 'wikidocs' && 
-        <div className="Projects2-right_item">
-          <div className="Projects2-header">
-            <p className="Projects2-date">2024</p>
+        <div className="Projects-right_item">
+          <div className="Projects-header">
+            <p className="Projects-date">2024</p>
           </div>
 
-          <div className="Projects2-row2">
+          <div className="Projects-row2">
             <div style={{display: 'flex', justifyContent: 'space-around', width: '100%'}}>
               <div style={{display: 'flex', justifyContent: 'center'}}>
-                <FaPython className="Projects2-icon" onMouseEnter={() => setPython(true)} onMouseLeave={() => setPython(false)}/>
-                {python && <p className="Projects2-icon_label">Python</p>}
+                <FaPython className="Projects-icon" onMouseEnter={() => setPython(true)} onMouseLeave={() => setPython(false)}/>
+                {python && <p className="Projects-icon_label">Python</p>}
               </div>
               <div style={{display: 'flex', justifyContent: 'center'}}>
-                <FaReact className="Projects2-icon" onMouseEnter={() => setReact(true)} onMouseLeave={() => setReact(false)}/>
-                {react && <p className="Projects2-icon_label">React</p>}
+                <FaReact className="Projects-icon" onMouseEnter={() => setReact(true)} onMouseLeave={() => setReact(false)}/>
+                {react && <p className="Projects-icon_label">React</p>}
               </div>
               <div style={{display: 'flex', justifyContent: 'center'}}>
-                <SiSqlalchemy className="Projects2-icon" onMouseEnter={() => setSqlAlchemy(true)} onMouseLeave={() => setSqlAlchemy(false)}/>
-                {sqlAlchemy && <p className="Projects2-icon_label">SqlAlchemy</p>}
+                <SiSqlalchemy className="Projects-icon" onMouseEnter={() => setSqlAlchemy(true)} onMouseLeave={() => setSqlAlchemy(false)}/>
+                {sqlAlchemy && <p className="Projects-icon_label">SqlAlchemy</p>}
               </div>
               <div style={{display: 'flex', justifyContent: 'center'}}>
-                <SiPostgresql className="Projects2-icon" onMouseEnter={() => setPostgre(true)} onMouseLeave={() => setPostgre(false)}/>
-                {postgre && <p className="Projects2-icon_label">PostgreSQL</p>}
+                <SiPostgresql className="Projects-icon" onMouseEnter={() => setPostgre(true)} onMouseLeave={() => setPostgre(false)}/>
+                {postgre && <p className="Projects-icon_label">PostgreSQL</p>}
               </div>
               <div style={{display: 'flex', justifyContent: 'center'}}>
-                <SiAxios className="Projects2-icon" onMouseEnter={() => setAxios(true)} onMouseLeave={() => setAxios(false)}/>
-                {axios && <p className="Projects2-icon_label">Axios</p>}
+                <SiAxios className="Projects-icon" onMouseEnter={() => setAxios(true)} onMouseLeave={() => setAxios(false)}/>
+                {axios && <p className="Projects-icon_label">Axios</p>}
               </div>
               <div style={{display: 'flex', justifyContent: 'center'}}>
-                <SiFlask className="Projects2-icon" onMouseEnter={() => setFlask(true)} onMouseLeave={() => setFlask(false)}/>
-                {flask && <p className="Projects2-icon_label">Flask</p>}
+                <SiFlask className="Projects-icon" onMouseEnter={() => setFlask(true)} onMouseLeave={() => setFlask(false)}/>
+                {flask && <p className="Projects-icon_label">Flask</p>}
               </div>
               <div style={{display: 'flex', justifyContent: 'center'}}>
-                <SiRedux className="Projects2-icon" onMouseEnter={() => setRedux(true)} onMouseLeave={() => setRedux(false)}/>
-                {redux && <p className="Projects2-icon_label">Redux</p>}
+                <SiRedux className="Projects-icon" onMouseEnter={() => setRedux(true)} onMouseLeave={() => setRedux(false)}/>
+                {redux && <p className="Projects-icon_label">Redux</p>}
               </div>
               <div style={{display: 'flex', justifyContent: 'center'}}>
-                <SiRender className="Projects2-icon" onMouseEnter={() => setRender(true)} onMouseLeave={() => setRender(false)}/>
-                {render && <p className="Projects2-icon_label">Render</p>}
+                <SiRender className="Projects-icon" onMouseEnter={() => setRender(true)} onMouseLeave={() => setRender(false)}/>
+                {render && <p className="Projects-icon_label">Render</p>}
               </div>
             </div>
           </div>
 
           <div>
-            <p className="Projects2-text">
+            <p className="Projects-text">
             WikiDocs is a full-stack web application that allows users to browse, create, and share a variety of documents, articles, and 
             prompts. Designed with a sleek, minimalist interface, it provides a seamless reading and writing experience. Users can publish 
             their own content, edit or delete their submissions, and explore work created by others. While non-owners can read and engage 
             with shared materials, only the original authors have the ability to modify or remove their content. Built for simplicity and 
             efficiency, WikiDocs makes knowledge sharing more accessible and intuitive.
             </p>
-            <img src={wikidocs} className="Projects2-img"/>
+            <img src={wikidocs} className="Projects-img"/>
           </div>
         </div>}
 
         {active === 'groundbnb' && 
-        <div className="Projects2-right_item">
-          <div className="Projects2-header">
-            <p className="Projects2-date">2024</p>
+        <div className="Projects-right_item">
+          <div className="Projects-header">
+            <p className="Projects-date">2024</p>
           </div>
 
-          <div className="Projects2-row2">
+          <div className="Projects-row2">
             <div style={{display: 'flex', justifyContent: 'space-around', width: '100%'}}>
               <div style={{display: 'flex', justifyContent: 'center'}}>
-                <FaJs className="Projects2-icon" onMouseEnter={() => setJavascript(true)} onMouseLeave={() => setJavascript(false)}/>
-                {javascript && <p className="Projects2-icon_label">JavaScript</p>}
+                <FaJs className="Projects-icon" onMouseEnter={() => setJavascript(true)} onMouseLeave={() => setJavascript(false)}/>
+                {javascript && <p className="Projects-icon_label">JavaScript</p>}
               </div>
               <div style={{display: 'flex', justifyContent: 'center'}}>
-                <FaReact className="Projects2-icon" onMouseEnter={() => setReact(true)} onMouseLeave={() => setReact(false)}/>
-                {react && <p className="Projects2-icon_label">React</p>}
+                <FaReact className="Projects-icon" onMouseEnter={() => setReact(true)} onMouseLeave={() => setReact(false)}/>
+                {react && <p className="Projects-icon_label">React</p>}
               </div>
               <div style={{display: 'flex', justifyContent: 'center'}}>
-                <SiSequelize className="Projects2-icon" onMouseEnter={() => setSequelize(true)} onMouseLeave={() => setSequelize(false)}/>
-                {sequelize && <p className="Projects2-icon_label">Sequelize</p>}
+                <SiSequelize className="Projects-icon" onMouseEnter={() => setSequelize(true)} onMouseLeave={() => setSequelize(false)}/>
+                {sequelize && <p className="Projects-icon_label">Sequelize</p>}
               </div>
               <div style={{display: 'flex', justifyContent: 'center'}}>
-                <SiPostgresql className="Projects2-icon" onMouseEnter={() => setPostgre(true)} onMouseLeave={() => setPostgre(false)}/>
-                {postgre && <p className="Projects2-icon_label">PostgreSQL</p>}
+                <SiPostgresql className="Projects-icon" onMouseEnter={() => setPostgre(true)} onMouseLeave={() => setPostgre(false)}/>
+                {postgre && <p className="Projects-icon_label">PostgreSQL</p>}
               </div>
               <div style={{display: 'flex', justifyContent: 'center'}}>
-                <SiAxios className="Projects2-icon" onMouseEnter={() => setAxios(true)} onMouseLeave={() => setAxios(false)}/>
-                {axios && <p className="Projects2-icon_label">Axios</p>}
+                <SiAxios className="Projects-icon" onMouseEnter={() => setAxios(true)} onMouseLeave={() => setAxios(false)}/>
+                {axios && <p className="Projects-icon_label">Axios</p>}
               </div>
               <div style={{display: 'flex', justifyContent: 'center'}}>
-                <SiExpress className="Projects2-icon" onMouseEnter={() => setExpress(true)} onMouseLeave={() => setExpress(false)}/>
-                {express && <p className="Projects2-icon_label">Express</p>}
+                <SiExpress className="Projects-icon" onMouseEnter={() => setExpress(true)} onMouseLeave={() => setExpress(false)}/>
+                {express && <p className="Projects-icon_label">Express</p>}
               </div>
               <div style={{display: 'flex', justifyContent: 'center'}}>
-                <SiRedux className="Projects2-icon" onMouseEnter={() => setRedux(true)} onMouseLeave={() => setRedux(false)}/>
-                {redux && <p className="Projects2-icon_label">Redux</p>}
+                <SiRedux className="Projects-icon" onMouseEnter={() => setRedux(true)} onMouseLeave={() => setRedux(false)}/>
+                {redux && <p className="Projects-icon_label">Redux</p>}
               </div>
               <div style={{display: 'flex', justifyContent: 'center'}}>
-                <FaNodeJs className="Projects2-icon" onMouseEnter={() => setNode(true)} onMouseLeave={() => setNode(false)}/>
-                {node && <p className="Projects2-icon_label">Node</p>}
+                <FaNodeJs className="Projects-icon" onMouseEnter={() => setNode(true)} onMouseLeave={() => setNode(false)}/>
+                {node && <p className="Projects-icon_label">Node</p>}
               </div>
               <div style={{display: 'flex', justifyContent: 'center'}}>
-                <SiRender className="Projects2-icon" onMouseEnter={() => setRender(true)} onMouseLeave={() => setRender(false)}/>
-                {render && <p className="Projects2-icon_label">Render</p>}
+                <SiRender className="Projects-icon" onMouseEnter={() => setRender(true)} onMouseLeave={() => setRender(false)}/>
+                {render && <p className="Projects-icon_label">Render</p>}
               </div>
             </div>
           </div>
 
           <div>
-            <p className="Projects2-text">
+            <p className="Projects-text">
             GroundBnb is a full-stack web application modeled after Airbnb, replicating its core features while providing a seamless user 
             experience. Built with React, Redux, Express, PostgreSQL, and Sequelize, it offers a dynamic and responsive interface for browsing, 
             booking, and listing rental properties. The application features JWT authentication for secure user login and session management. 
@@ -248,7 +248,7 @@ export default function Desktop() {
             state management powered by Redux and optimized database interactions through Sequelize, the platform ensures smooth performance 
             and scalability. 
             </p>
-            <img src={groundbnb} className="Projects2-img"/>
+            <img src={groundbnb} className="Projects-img"/>
           </div>
         </div>}
       </div>

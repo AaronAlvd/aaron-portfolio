@@ -11,7 +11,7 @@ import { SiSequelize, SiSqlalchemy, SiSqlite, SiFlask, SiPostgresql, SiRedux, Si
 import { AiOutlineOpenAI } from "react-icons/ai";
 import { VscVscode } from "react-icons/vsc";
 
-import "./Projects2.css" 
+import "./Projects.css" 
 
 export default function Mobile() {
   const location = useLocation(); 
