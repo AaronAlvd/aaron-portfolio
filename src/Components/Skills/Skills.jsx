@@ -2,6 +2,7 @@ import { useEffect, useState, useRef, useMemo } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
 import Desktop from './Desktop';
+import Mobile from './Mobile';
 
 import { FaPython, FaJs, FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa";
 import { SiSequelize, SiSqlalchemy, SiSqlite, SiFlask, SiPostgresql, SiRedux, SiAxios, SiExpress } from "react-icons/si";
@@ -44,6 +45,8 @@ export default function Skills() {
   }, []);
 
   if (width > 1039) return <Desktop />
+
+  if (width < 1040) return <Mobile/>
 
   return ( 
     <div className="Skills">
