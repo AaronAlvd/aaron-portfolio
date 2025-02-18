@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef, useMemo } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { MdPlayArrow } from "react-icons/md";
+import { GoDotFill } from "react-icons/go";
 
 import social from '../../assets/social.png';
 import groundbnb from '../../assets/groundbnb.png';
@@ -76,8 +77,17 @@ export default function Desktop() {
         {active === 'social' && 
         <div className="Projects-right_item">
           <div className="Projects-header">
-            <p className="Projects-date">2025</p>
+            <p className="my-[10px] text-[22px] font-semibold">2025</p>
           </div>
+
+          <div className="flex text-[14px] items-center justify-center">
+            <GoDotFill className="text-green-500 mx-[3px]"/>
+            <p className="text-[14px]">In Progress</p>
+          </div>
+
+          <p className="flex justify-center"><a className="text-[12px] my-[10px] text-blue-400 cursor-pointer hover:border-b-1 w-min whitespace-nowrap">
+            https://socialapp-sabg.onrender.com/
+          </a></p>
 
           <div className="Projects-row2">
             <div style={{display: 'flex', justifyContent: 'space-around', width: '100%'}}>
@@ -125,7 +135,7 @@ export default function Desktop() {
           </div>
 
           <div>
-            <p className="Projects-text">
+            <p className="Projects-text mb-[10px]">
             Social App is a real-time social platform designed to enhance user engagement and foster meaningful connections. Currently in development, it 
             enables users to share posts, comment, and interact seamlessly while maintaining a smooth and intuitive experience. Built with React and Redux 
             on the front end and powered by Express and Sequelize on the backend, Social App ensures efficient state management and real-time updates. A 
@@ -140,7 +150,12 @@ export default function Desktop() {
         {active === 'wikidocs' && 
         <div className="Projects-right_item">
           <div className="Projects-header">
-            <p className="Projects-date">2024</p>
+            <p className="my-[10px] text-[22px] font-semibold">2024</p>
+          </div>
+
+          <div className="flex text-[14px] items-center justify-center">
+            <GoDotFill className="text-blue-500 mx-[3px]"/>
+            <p className="text-[14px]">Completed</p>
           </div>
 
           <div className="Projects-row2">
@@ -181,7 +196,7 @@ export default function Desktop() {
           </div>
 
           <div>
-            <p className="Projects-text">
+            <p className="Projects-text mb-[10px]">
             WikiDocs is a full-stack web application that allows users to browse, create, and share a variety of documents, articles, and 
             prompts. Designed with a sleek, minimalist interface, it provides a seamless reading and writing experience. Users can publish 
             their own content, edit or delete their submissions, and explore work created by others. While non-owners can read and engage 
@@ -195,8 +210,17 @@ export default function Desktop() {
         {active === 'groundbnb' && 
         <div className="Projects-right_item">
           <div className="Projects-header">
-            <p className="Projects-date">2024</p>
+            <p className="my-[10px] text-[22px] font-semibold">2024</p>
           </div>
+
+          <div className="flex text-[14px] items-center justify-center">
+            <GoDotFill className="text-blue-500 mx-[3px]"/>
+            <p className="text-[14px]">Completed</p>
+          </div>
+
+          <p className="flex justify-center"><a className="text-[12px] my-[10px] text-blue-400 cursor-pointer hover:border-b-1 w-min whitespace-nowrap">
+            https://ground-bnb-n5l7.onrender.com/
+          </a></p>
 
           <div className="Projects-row2">
             <div style={{display: 'flex', justifyContent: 'space-around', width: '100%'}}>
@@ -240,7 +264,7 @@ export default function Desktop() {
           </div>
 
           <div>
-            <p className="Projects-text">
+            <p className="Projects-text mb-[10px]">
             GroundBnb is a full-stack web application modeled after Airbnb, replicating its core features while providing a seamless user 
             experience. Built with React, Redux, Express, PostgreSQL, and Sequelize, it offers a dynamic and responsive interface for browsing, 
             booking, and listing rental properties. The application features JWT authentication for secure user login and session management. 
