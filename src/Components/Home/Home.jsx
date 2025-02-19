@@ -1,5 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
+import { jsPDF } from 'jspdf';
+
+import resume from '../../assets/AaronAlvaradoResume.pdf';
 
 import Personal from '../Personal/Personal';
 
@@ -8,6 +11,12 @@ import './Home.css';
 export default function Home() {
   const [height, setHeight] = useState(window.innerHeight);
   const [width, setWidth] = useState(window.innerWidth);
+
+  const generatePDF = () => {
+    const doc = new jsPDF(resume);
+    doc.text("Hello, this is your PDF!", 10, 10);
+    doc.save("download.pdf");
+  };
 
   useEffect(() => {
     // Define the resize handler
@@ -37,7 +46,10 @@ export default function Home() {
         </p>
       </div>
       <div className='Home-body'>
-        
+        <a href={resume} className="bg-[rgb(90,90,90)] h-[30px] w-[190px] rounded-[3px] mt-[15px] flex items-center justify-center text-white"
+           download="AaronAlvaradoResume.pdf">
+          Download Resume
+        </a>
       </div>
     </div>
   )

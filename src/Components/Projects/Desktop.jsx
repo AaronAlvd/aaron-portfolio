@@ -85,9 +85,14 @@ export default function Desktop() {
             <p className="text-[14px]">In Progress</p>
           </div>
 
-          <p className="flex justify-center"><a className="text-[12px] my-[10px] text-blue-400 cursor-pointer hover:border-b-1 w-min whitespace-nowrap">
-            https://socialapp-sabg.onrender.com/
-          </a></p>
+          <div className="flex justify-around">
+            <a className="text-[14px] font-bold cursor-pointer hover:border-b-1" href="https://socialapp-1-leom.onrender.com" target="_blank">
+              Visit Site
+            </a>
+            <a className="text-[14px] font-bold cursor-pointer hover:border-b-1" href="https://github.com/AaronAlvd/SocialApp" target="_blank">
+              Visit Github
+            </a>
+          </div>
 
           <div className="Projects-row2">
             <div style={{display: 'flex', justifyContent: 'space-around', width: '100%'}}>
@@ -158,6 +163,15 @@ export default function Desktop() {
             <p className="text-[14px]">Completed</p>
           </div>
 
+          <div className="flex justify-around">
+            <a className="text-[14px] font-bold cursor-pointer hover:border-b-1" href="https://wikidocs.onrender.com" target="_blank">
+              Visit Site
+            </a>
+            <a className="text-[14px] font-bold cursor-pointer hover:border-b-1" href="https://github.com/AaronAlvd/Python-Project" target="_blank">
+              Visit Github
+            </a>
+          </div>
+
           <div className="Projects-row2">
             <div style={{display: 'flex', justifyContent: 'space-around', width: '100%'}}>
               <div style={{display: 'flex', justifyContent: 'center'}}>
@@ -218,9 +232,14 @@ export default function Desktop() {
             <p className="text-[14px]">Completed</p>
           </div>
 
-          <p className="flex justify-center"><a className="text-[12px] my-[10px] text-blue-400 cursor-pointer hover:border-b-1 w-min whitespace-nowrap">
-            https://ground-bnb-n5l7.onrender.com/
-          </a></p>
+          <div className="flex justify-around">
+            <a className="text-[14px] font-bold cursor-pointer hover:border-b-1" href="https://ground-bnb-n5l7.onrender.com" target="_blank">
+              Visit Site
+            </a>
+            <a className="text-[14px] font-bold cursor-pointer hover:border-b-1" href="https://github.com/AaronAlvd/Ground-bnb" target="_blank">
+              Visit Github
+            </a>
+          </div>
 
           <div className="Projects-row2">
             <div style={{display: 'flex', justifyContent: 'space-around', width: '100%'}}>

@@ -1,5 +1,6 @@
 import { useEffect, useState, useRef, useMemo } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import { GoDotFill } from "react-icons/go";
 import { MdPlayArrow } from "react-icons/md";
 
 import social from '../../assets/social.png';
@@ -76,6 +77,20 @@ export default function Mobile() {
             <p className="Projects-date">2025</p>
           </div>
 
+          <div className="flex text-[14px] items-center justify-center">
+            <GoDotFill className="text-green-500 mx-[3px]"/>
+            <p className="text-[14px]">In Progress</p>
+          </div>
+
+          <div className="flex justify-around">
+            <a className="text-[14px] font-bold cursor-pointer hover:border-b-1" href="https://socialapp-1-leom.onrender.com" target="_blank">
+              Visit Site
+            </a>
+            <a className="text-[14px] font-bold cursor-pointer hover:border-b-1" href="https://github.com/AaronAlvd/SocialApp" target="_blank">
+              Visit Github
+            </a>
+          </div>
+
           <div className="Projects-row2">
             <div className="Projects-techs">
               <div style={{display: 'flex', justifyContent: 'center'}}>
@@ -140,6 +155,20 @@ export default function Mobile() {
             <p className="Projects-date">2024</p>
           </div>
 
+          <div className="flex text-[14px] items-center justify-center">
+            <GoDotFill className="text-blue-500 mx-[3px]"/>
+            <p className="text-[14px]">Completed</p>
+          </div>
+
+          <div className="flex justify-around">
+            <a className="text-[14px] font-bold cursor-pointer hover:border-b-1" href="https://wikidocs.onrender.com" target="_blank">
+              Visit Site
+            </a>
+            <a className="text-[14px] font-bold cursor-pointer hover:border-b-1" href="https://github.com/AaronAlvd/Python-Project" target="_blank">
+              Visit Github
+            </a>
+          </div>
+
           <div className="Projects-row2">
             <div className="Projects-techs">
               <div style={{display: 'flex', justifyContent: 'center'}}>
@@ -193,6 +222,20 @@ export default function Mobile() {
         <div className="Projects-right_item">
           <div className="Projects-header">
             <p className="Projects-date">2024</p>
+          </div>
+
+          <div className="flex text-[14px] items-center justify-center">
+            <GoDotFill className="text-blue-500 mx-[3px]"/>
+            <p className="text-[14px]">Completed</p>
+          </div>
+
+          <div className="flex justify-around">
+            <a className="text-[14px] font-bold cursor-pointer hover:border-b-1" href="https://ground-bnb-n5l7.onrender.com" target="_blank">
+              Visit Site
+            </a>
+            <a className="text-[14px] font-bold cursor-pointer hover:border-b-1" href="https://github.com/AaronAlvd/Ground-bnb" target="_blank">
+              Visit Github
+            </a>
           </div>
 
           <div className="Projects-row2">
