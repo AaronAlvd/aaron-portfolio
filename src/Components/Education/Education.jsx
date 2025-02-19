@@ -169,13 +169,11 @@ export default function Education() {
 
             <div className="Education-body">
               <p className="Education-text">
-                At American River College, I am pursuing coursework in Molecular Biology while preparing to transfer to a University of California. 
-                My studies focus on the fundamental principles of genetics, biochemistry, and cell biology, providing me with a strong foundation in 
-                the life sciences. Alongside my biology coursework, I am also honing my skills in computer science, as I believe that the 
-                intersection of computational tools and biological research will play a crucial role in solving complex scientific challenges. My 
-                goal is to leverage both disciplines to contribute to advancements in biotechnology and medical research, particularly in the 
-                application of AI to disease treatment. Through rigorous coursework and hands-on lab experience, I am developing the critical 
-                thinking and analytical skills needed to excel in both fields.
+                At Grant Union High School, I focused on building a strong foundation in both biology and math, which sparked my passion for 
+                combining these fields in my future studies. Through rigorous coursework, I developed a deep understanding of scientific principles 
+                and analytical problem-solving. This foundation has guided my current academic journey, where I am pursuing Molecular Biology and 
+                Computer Science at American River College, with plans to transfer to a University of California. The skills I gained at Grant Union
+                continue to drive my ambition to contribute to innovative solutions in biotechnology and AI-driven medical research.
               </p>
             </div>
           </div>
