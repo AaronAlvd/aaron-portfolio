@@ -3,7 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { jsPDF } from 'jspdf';
 
 import resume from '../../assets/AaronAlvaradoResume.pdf';
-
+import photo from '../../assets/photo.png';
 import Personal from '../Personal/Personal';
 
 import './Home.css';
@@ -37,6 +37,9 @@ export default function Home() {
   return (
     <div className='Home' style={{height: `${height - 110}px`}}>
       <div className='Home-header'>
+        <div>
+          <img src={photo} className='w-[250px] h-[250px] object-cover bg-center rounded-full'/>
+        </div>
         <p className='Home-career'>Software Developer</p>
         <p className='Home-name'>Aaron Alvarado</p>
         <p className='Home-location'>Sacramento, CA</p>

@@ -98,13 +98,13 @@
 }
 .Home-name {
   text-align: center;
-  margin: 10px 0;
+  margin: 5px 0;
   font-size: 40px;
   font-weight: 700;
   color: rgb(163, 54, 61);
 }
 .Home-location {
-  margin: 20px 0;
+  margin: 10px 0;
   font-size: 20px;
   font-weight: 400;
 }
